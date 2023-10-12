@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.7.0/pdf-lib.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Image to PDF</title>
+    </head>
+    <body>
+        <h1>Image to PDF Js</h1>
+        <div class="converter">
+            <h3>Convert your images to a PDF</h3>
+            <div class="inputField">
+                <label for="imageInput"><i class="fa-solid fa-image"></i>Select images</label>
+                <input type="file" id="imageInput" accept="image/*" multiple>
+                <button id="convertButton">Convert to PDF</button>
+            </div>
+            <h4>Drag and Drop Images</h4>
+            <div id="imagePreviews" class="image-previews"></div><br>
+            <div id="output">
+            </div>
+        </div>
+    <script src="./app.js"></script>
+    </body>
+</html>
