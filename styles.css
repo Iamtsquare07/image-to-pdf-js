@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+body {
+    padding: 10px;
+    background-color: #000014;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgba(255, 217, 0, 0.61);
+    font-family: 'Croissant One', cursive;
+}
+
+h4 {
+    margin-bottom: 20px;
+}
+
+.converter {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: whitesmoke;
+    margin: auto;
+    width: 85%;
+    min-height: 500px;
+    margin-top: 0px;
+    background-color: #00006e;
+    padding: 5px 20px 10px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px #1b37b4;
+    margin-left: -10px;
+}
+
+label, button {
+    background-color:#1b37b4;
+    padding: 7px;
+    border-radius: 15px;
+    border:1px solid #1b37b4;
+    width: fit-content;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color:#fff;
+}
+
+label {
+    min-width: 150px;
+    font-size: 16px;
+}
+
+label i {
+    margin-right: 10px;
+}
+
+input[type="file"] {
+    visibility: hidden;
+}
+
+.inputField {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    /* justify-content: center; */
+    align-items:center;
+}
+
+#imagePreviews {
+    width: 90%;
+    height: 200px;
+    border-radius: 5px;
+    border: 2px solid #02028b;
+    background-color: #01015c;
+    padding: 5px;
+    overflow:hidden;
+    overflow-x: auto;
+}
+
+.image-preview {
+    width: 70px;
+    height: auto;
+    margin: 5px;
+}
+
+.image-previews.drag-over {
+    opacity: .7;
+}
+@media only screen and (min-width: 1024px) {
+    .converter {
+        min-width: 500px;
+        width: 70%;
+        margin-left: auto;
+    }
+}
